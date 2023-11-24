@@ -9,7 +9,7 @@ public final class Builder {
 
     }
 
-    public Builder withTypes(Entity<String>... entities) {
+    public Builder withTypes(Entity<String> entities) {
         return new Builder(Person.make(Entity.combineAll(entities)));
     }
 }
